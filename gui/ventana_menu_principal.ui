@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>94</width>
+    <height>738</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Programación proyecto</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>94</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEjercicios">
+    <property name="title">
+     <string>Ejercicios</string>
+    </property>
+    <addaction name="actionCalculadora_moles"/>
+    <addaction name="actionCalculadora_determinantes"/>
+    <addaction name="actionCalculadora_rebotes"/>
+   </widget>
+   <addaction name="menuEjercicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCalculadora_moles">
+   <property name="text">
+    <string>Calculadora moles</string>
+   </property>
+  </action>
+  <action name="actionCalculadora_determinantes">
+   <property name="text">
+    <string>Calculadora determinantes</string>
+   </property>
+  </action>
+  <action name="actionCalculadora_rebotes">
+   <property name="text">
+    <string>Calculadora rebotes</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

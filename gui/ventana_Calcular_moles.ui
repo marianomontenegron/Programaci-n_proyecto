@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calc_moles</class>
+ <widget class="QDialog" name="Calc_moles">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calc_moles</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Fondo general del diálogo */
+QDialog {
+    background-color: #f4f6f8;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 10pt;
+}
+
+/* Etiquetas */
+QLabel {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Campos de texto */
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe3;
+    border-radius: 6px;
+    padding: 6px 8px;
+    selection-background-color: #4a90e2;
+    selection-color: white;
+}
+
+QLineEdit:focus {
+    border: 1px solid #4a90e2;
+}
+
+/* Botones */
+QPushButton {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #3b7dc4;
+}
+
+QPushButton:pressed {
+    background-color: #2f5f94;
+}
+
+QPushButton:disabled {
+    background-color: #cfd6dd;
+    color: #7a8a99;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_elemento">
+           <property name="text">
+            <string>Nombre del elemento o sustancia</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_elemento"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_masa_molar">
+           <property name="text">
+            <string>Masa molar (g/mol)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_masa_molar"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_prediccion_moles">
+           <property name="text">
+            <string>¿Cuantos Moles crees que necesites?</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_prediccion_moles"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="Boton_calc">
+         <property name="text">
+          <string>Calcular</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_resultado">
+         <property name="text">
+          <string>Resultado:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
