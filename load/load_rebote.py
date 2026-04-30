@@ -21,5 +21,5 @@ class VentanaRebotes(QtWidgets.QDialog):
             return
 
         simulador = SimuladorPelota(h_ini, h_lim)
-        resultado = simulador.calcular_rebotes()
+        resultado = simulador.ejecutar_simulacion()
         self.label_resultado.setText(str(resultado))

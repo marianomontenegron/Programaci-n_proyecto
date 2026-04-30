@@ -10,21 +10,24 @@ class VentanaCalcularMoles(QtWidgets.QDialog):
 
     def botonCalcularClick(self):
         try:
-            elemento = float(self.lineEdit_elemento.text())
+            elemento = self.lineEdit_elemento.text()
             masa_molar = float(self.lineEdit_masa_molar.text())
-            gramso = float(self.lineEdit_gramos.text())
+            gramos = float(self.lineEdit_g.text())
             moles_creidos = float(self.lineEdit_prediccion_moles.text())
         except ValueError:
-            self.label_resultado.setText("Error")
+            self.label_resultado.setText("Error: ingresa valores numéricos válidos.")
             return
 
         calculadora = CalculadoraQuimica()
         calculadora.elemento = elemento
         calculadora.masa_molar = masa_molar
-        calculadora.gramos = gramso
+        calculadora.gramos = gramos
         calculadora.moles_creidos = moles_creidos
 
         if not calculadora.pedir_datos():
+            self.label_resultado.setText("Error: la masa molar debe ser mayor a cero.")
             return
 
-        self.label_resultado.setText(f"Moles correctos: {calculadora.moles_correctos}")
+        analisis = calculadora.ejecutar_analisis_numerico()
+        resultado = calculadora.obtener_resultado()
+        self.label_resultado.setText(f"{analisis}\n\n{resultado}")

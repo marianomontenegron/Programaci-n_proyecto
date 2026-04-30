@@ -66,70 +66,76 @@ QPushButton:disabled {
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout_3">
+    <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QLabel" name="label_elemento">
-           <property name="text">
-            <string>Nombre del elemento o sustancia</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_elemento"/>
-         </item>
-        </layout>
+        <widget class="QLabel" name="label_elemento">
+         <property name="text">
+          <string>Nombre del elemento o sustancia</string>
+         </property>
+        </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QLabel" name="label_masa_molar">
-           <property name="text">
-            <string>Masa molar (g/mol)</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_masa_molar"/>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
-          <widget class="QLabel" name="label_prediccion_moles">
-           <property name="text">
-            <string>¿Cuantos Moles crees que necesites?</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_prediccion_moles"/>
-         </item>
-        </layout>
+        <widget class="QLineEdit" name="lineEdit_elemento"/>
        </item>
       </layout>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <widget class="QPushButton" name="Boton_calc">
+        <widget class="QLabel" name="label_masa_molar">
          <property name="text">
-          <string>Calcular</string>
+          <string>Masa molar (g/mol)</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_resultado">
-         <property name="text">
-          <string>Resultado:</string>
-         </property>
-        </widget>
+        <widget class="QLineEdit" name="lineEdit_masa_molar"/>
        </item>
       </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Introduce los gramos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_g"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_prediccion_moles">
+         <property name="text">
+          <string>¿Cuantos Moles crees que necesites?</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_prediccion_moles"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Boton_calc">
+       <property name="text">
+        <string>Calcular</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_resultado">
+       <property name="text">
+        <string>Resultado:</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
